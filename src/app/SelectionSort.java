@@ -3,7 +3,7 @@ package app;
 public class SelectionSort {
 	public static void selectionSort(double[] list) {
 		for (int i = 0; i < list.length - 1; i++) {
-			/* Find the minimum in the list[i..list.length-1] */
+			/* Find the minimum in the i to length-1 */
 			double currentMin = list[i];
 			int currentMinIndex = i;
 
@@ -14,7 +14,7 @@ public class SelectionSort {
 				}
 			}
 
-			/* Swap list[i] with list[currentMinIndex] if necessary */
+			/* Arrange when a desired element is found */
 			if (currentMinIndex != i) {
 				list[currentMinIndex] = list[i];
 				list[i] = currentMin;
